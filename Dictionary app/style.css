@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:not(i){
+    font-family: 'Rubik';
+}
+
+body{
+    background: #2e6dc6;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.903);
+    width: 90vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px 50px;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(38,36,61,0.2);
+}
+
+.search_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_box >input{
+    background: rgba(255, 255, 255, 0);
+    padding: 5px;
+    width: 70%;
+    border:none;
+    font-size: 1rem;
+    outline: none;
+    border-bottom:1.75px solid #2e6dc6;
+}
+
+.search_box > button{
+    padding: 12px 0px;
+    width: 22.5%;background-color: #2e6dc6;
+    border:none;
+    border-radius: 2px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: #357ee4;
+}
+
+.result{
+    /* position: relative; */
+    z-index: 10;
+}
+
+.head{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0a3777;
+}
+
+ .word{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#sound{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.details{
+    display: flex;
+    gap: 1rem;
+    color: #8fa0b8;
+    margin: 5px 0 20px 0;
+    font-size: 1rem;
+}
+
+.word_meaning{
+    color: #2e6dc6;
+    line-height: 1.25rem;
+}
+.word_example{
+    color: #1e467f;
+    font-style: italic;
+    border-left: 4px solid #0a3777;
+    padding-left:20px ;
+    margin-top: 30px;
+}
