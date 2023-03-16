@@ -17,7 +17,7 @@ btn.addEventListener('click',()=>{
             </button>
         </div>
         <div class="details">
-            <p>${item[0].meanings[0].partsOfSpeech}</p>
+            <p>${item[0].meanings[0].partOfSpeech}</p>
             <p>/${item[0].phonetic}</p>
         </div>
         <p class="word_meaning">
@@ -27,9 +27,13 @@ btn.addEventListener('click',()=>{
             ${item[0].meanings[0].definitions[0].example || ""}
         </p>`;
         sound.setAttribute("src",`${item[0].phonetics[0].audio}`);
-        console.log(sound);
 
-    });
+    })
+    .catch(()=>{
+        
+        result.innerHTML =`<h3 class="error"> Couldn't find the Word</h3>  `
+    })
+
 });
 
 function playSound(){
