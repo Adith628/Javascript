@@ -27,5 +27,4 @@ let getJoke=()=>{
         jokeContainer.textContent=`${item.joke}`;
     })
 }
-getJoke();
 btn.addEventListener('click',getJoke);
