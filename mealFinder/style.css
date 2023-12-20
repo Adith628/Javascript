@@ -92,7 +92,7 @@ main {
   background: url("./food.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .ingredients {
